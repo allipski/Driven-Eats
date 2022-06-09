@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.barratopo {
+    display: flex;
+    flex-direction: column;
+    background-color: #cf2b2b;
+    color: #FFFFFF;
+    align-items: flex-start;
+    justify-content: center;
+    height: 92px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 4px;
+}
+
+.barratopo div {
+    margin-left: 21px;
+}
+
+.barratopo h1 {
+    font-size: 44px;
+}
+
+.barratopo p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+

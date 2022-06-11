@@ -28,6 +28,7 @@ body {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 4px;
     position: fixed;
+    z-index: 1;
 }
 
 .barratopo div {
@@ -59,14 +60,7 @@ h1 {
 .caixamenor {
     margin-top: 17px;
     overflow-x: scroll;
-    -ms-overflow-style: none;  /* Esconder scrollbar IE e Edge */
-    scrollbar-width: none;  /*Esconder scrollbar Firefox */
 }
-
- /* Esconder scrollbar Chrome, Safari e Opera */
- .caixamenor::-webkit-scrollbar {
-    display: none;
-  }
 
 .caixamenor > div {
     display: flex;
@@ -85,6 +79,7 @@ h1 {
     width: 172px;
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    position: relative;
 }
 
 .caixaitem p:nth-of-type(1) {
@@ -104,8 +99,28 @@ h1 {
     font-weight: 400;
 }
 
-.caixaitem img {
+.caixaitem img:nth-of-type(1) {
     border-radius: 6px;
+}
+
+.caixaitem img:nth-of-type(2) {
+    margin: 0px;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    bottom: 14px;
+    right: 11px;
+    display: none;
+}
+
+.itemselecionado {
+    border: 5px solid #32b72f;
+    border-radius: 9px;
+    padding: 11px;
+}
+
+.itemselecionado img:nth-of-type(2) {
+    display: flex;
 }
 
 .barrabotao {
@@ -127,6 +142,7 @@ h1 {
     justify-content: center;
     font-size: 20px;
     font-weight: 400;
+    z-index: 1;
 }
 
 button {
@@ -143,4 +159,16 @@ button {
     line-height: 23px;
     height: 61px;
     width: 90%;
+}
+
+@media only screen and (max-width: 614px) {
+.caixamenor {
+    -ms-overflow-style: none;  /* Esconder scrollbar IE e Edge */
+    scrollbar-width: none;  /*Esconder scrollbar Firefox */
+}
+
+ /* Esconder scrollbar Chrome, Safari e Opera */
+ .caixamenor::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -1,3 +1,7 @@
 function selectitem(elemento) {
-    elemento.classList.toggle("itemselecionado");
+    const jaTem = document.getElementById("comida").querySelector("itemselecionado");
+    if (jaTem === null){
+        jaTem.classList.add("itemselecionado");
+    } 
+
 }

@@ -14,8 +14,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
     <title>Driven Eats - by Alice Lipski from T7</title>
 </head>
 
@@ -43,21 +45,21 @@
                                 <img src="images/frango.png" />
                                 <p>Frango Yin Yang</p>
                                 <p>Um pouco de batata, um pouco de salada.</p>
-                                <p>R$ 14,90</p>
+                                <span>R$ <span class="numero">14,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                             <div class="caixaitem" onclick="selectitem1(this)">
                                 <img src="images/frango.png" />
-                                <p>Frango Cordon Bleu</p>
+                                <p>Frango Bleu</p>
                                 <p>Um pouco de salada, um pouco de batata.</p>
-                                <p>R$ 16,90</p>
+                                <span>R$ <span class="numero">16,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                             <div class="caixaitem" onclick="selectitem1(this)">
                                 <img src="images/frango.png" />
                                 <p>Frango Hawaii</p>
                                 <p>Um pouco de farofa, um pouco de salada.</p>
-                                <p>R$ 18,90</p>
+                                <span>R$ <span class="numero">18,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                         </div>
@@ -71,23 +73,23 @@
                         <div>
                             <div class="caixaitem" onclick="selectitem2(this)">
                                 <img src="images/coca.png" />
-                                <p>Coca Gelada  </p>
+                                <p>Coca Gelada </p>
                                 <p>350ml</p>
-                                <p>R$ 4,90</p>
+                                <span>R$ <span class="numero">16,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                             <div class="caixaitem" onclick="selectitem2(this)">
                                 <img src="images/coca.png" />
                                 <p>Guaraná Jesus</p>
                                 <p>500ml</p>
-                                <p>R$ 4,50</p>
+                                <span>R$ <span class="numero">16,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                             <div class="caixaitem" onclick="selectitem2(this)">
                                 <img src="images/coca.png" />
                                 <p>Chá Mate</p>
                                 <p>Na garrafinha</p>
-                                <p>R$ 6,90</p>
+                                <span>R$ <span class="numero">18,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                         </div>
@@ -103,21 +105,21 @@
                                 <img src="images/coca.png" />
                                 <p>Coca Gelada</p>
                                 <p>350ml</p>
-                                <p>R$ 4,90</p>
+                                <span>R$ <span class="numero">14,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                             <div class="caixaitem" onclick="selectitem3(this)">
                                 <img src="images/coca.png" />
                                 <p>Guaraná Jesus</p>
                                 <p>500ml</p>
-                                <p>R$ 4,50</p>
+                                <span>R$ <span class="numero">16,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                             <div class="caixaitem" onclick="selectitem3(this)">
                                 <img src="images/coca.png" />
                                 <p>Chá Mate</p>
                                 <p>Na garrafinha</p>
-                                <p>R$ 6,90</p>
+                                <span>R$ <span class="numero">18,90</span></span>
                                 <img class="check" src="images/check.svg" />
                             </div>
                         </div>
@@ -127,13 +129,20 @@
             <!-- barra botao -->
             <div class="barrabotao">
                 <div>
-                    <button onclick="window.location.href='https://wa.me/5511992984224';" id="botao">Selecione os 3 itens para fechar o pedido</button>
+                    <button onclick="enviarpedido()" id="botao">Selecione os 3 itens para fechar o pedido</button>
                 </div>
             </div>
         </div>
     </div>
+<div class="escondido">
+Olá, gostaria de fazer o pedido:
+- Prato: <p class="substituir">seu prato aqui</p>
+- Bebida: <p class="substituir">sua bebida aqui</p>
+- Sobremesa: <p class="substituir">sua sobremesa aqui</p>
+Total: R$ <p class="total">total aqui</p>
+</div>
     <!-- scripts js -->
-    <script src="scripts.js"></script> 
+    <script src="scripts.js"></script>
 </body>
 
 </html>

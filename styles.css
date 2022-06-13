@@ -57,12 +57,13 @@ h1 {
     font-weight: 400;
     font-size: 26px;
 }
+
 .caixamenor {
     margin-top: 17px;
     overflow-x: scroll;
 }
 
-.caixamenor > div {
+.caixamenor>div {
     display: flex;
     width: 548px;
     justify-content: space-between;
@@ -94,7 +95,7 @@ h1 {
     line-height: 18px;
 }
 
-.caixaitem p:nth-of-type(3) {
+.caixaitem > span {
     font-size: 16px;
     font-weight: 400;
 }
@@ -123,18 +124,6 @@ h1 {
     display: flex;
 }
 
-#comida
-
-#bebida
-
-#sobremesa
-
-#botao
-
-.teste {
-    background-color: red;
-}
-
 .barrabotao {
     display: flex;
     align-items: center;
@@ -147,7 +136,7 @@ h1 {
     bottom: 0px;
 }
 
-.barrabotao > div {
+.barrabotao>div {
     display: flex;
     height: 92px;
     align-items: center;
@@ -164,7 +153,7 @@ button {
     border-radius: 50px;
     color: white;
     padding: 8px 60px;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     font-size: 20px;
     font-weight: 400;
@@ -177,14 +166,28 @@ button {
     background-color: #32b72f;
 }
 
-@media only screen and (max-width: 614px) {
-.caixamenor {
-    -ms-overflow-style: none;  /* Esconder scrollbar IE e Edge */
-    scrollbar-width: none;  /*Esconder scrollbar Firefox */
+.substituir {
+    border: none;
 }
 
- /* Esconder scrollbar Chrome, Safari e Opera */
- .caixamenor::-webkit-scrollbar {
-    display: none;
-  }
+.numero {
+    border: none;
+}
+
+.escondido {
+    display:none;
+}
+
+@media only screen and (max-width: 614px) {
+    .caixamenor {
+        -ms-overflow-style: none;
+        /* Esconder scrollbar IE e Edge */
+        scrollbar-width: none;
+        /*Esconder scrollbar Firefox */
+    }
+
+    /* Esconder scrollbar Chrome, Safari e Opera */
+    .caixamenor::-webkit-scrollbar {
+        display: none;
+    }
 }
